@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <!-- Semantic UI-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+</head>
+<body>
+
+<div id="progress-sample" class="ui progress" data-value="1" data="10">
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+    <div class="label">Uploading Files</div>
+</div>
+<div class="ui icon buttons">
+    <div class="decrement ui basic red button icon"><i class="minus icon"></i></div>
+    <div class="increment ui basic green button icon"><i class="plus icon"></i></div>
+</div>
+
+
+<script>
+    $('.decrement').click( () => {
+        $('#progress-sample').progress({
+            decrement: true,
+            value: 1,
+            label: 'ratio',
+            text: {
+                ratio: '{value} de {total}'
+            }
+        });
+    })
+    $('.increment').click( () => {
+        $('#progress-sample').progress({
+            increment: true,
+            label: 'ratio',
+            text: {
+                ratio: '{value} de {total}'
+            }
+        });
+    })
+
+
+</script>
+
+</body>
+</html>
