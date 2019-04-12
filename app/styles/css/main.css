@@ -1,9 +1,32 @@
 @charset "UTF-8";
+#stress-scored-method-container .question {
+  border: none !important;
+  padding: 0 0;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 1.28571429em;
+  text-transform: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  width: 80%;
+  border: 1px solid;
+  margin: 30px auto; }
+
+#stress-scored-method-container .answer {
+  max-height: 500px;
+  width: 100%;
+  text-align: center; }
+  #stress-scored-method-container .answer .field {
+    margin: 0 auto;
+    width: 80%; }
+
 #stress-scored-method-container #q1 {
   margin: 20% auto; }
 
 #stress-scored-method-container #q2 {
-  margin: 20% auto;
+  margin: 20% auto 0 auto;
   border: 1px solid #f9ecc0; }
 
 #stress-scored-method-container #q3 {
@@ -11,38 +34,34 @@
   border: 1px solid #f9ecc0; }
 
 #stress-scored-method-container .btn-container {
-  margin: 10% auto;
-  text-align: center; }
-
-#stress-scored-method-container .btn-next {
-  background: #f9dd91;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-#stress-scored-method-container .btn-next:active {
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
-
-#light-image-method-container .btn-container {
   margin: 100px auto;
   text-align: center; }
-
-#light-image-method-container .btn-next {
-  background: #f9dd91;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-#light-image-method-container .btn-next:active {
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
+  #stress-scored-method-container .btn-container .btn-next {
+    background: #f9dd91;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    #stress-scored-method-container .btn-container .btn-next i.icon {
+      margin: 0 !important; }
+  #stress-scored-method-container .btn-container .btn-next:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  #stress-scored-method-container .btn-container .btn-down {
+    background: #f9dd91;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    #stress-scored-method-container .btn-container .btn-down i.icon {
+      margin: 0 !important; }
+  #stress-scored-method-container .btn-container .btn-down:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
 
 #light-image-method-container .question-card {
   margin: 50% auto; }
-  #light-image-method-container .question-card .btn-next {
+  #light-image-method-container .question-card .btn-down {
     display: block;
     margin: 50px auto 100px;
     width: 100px; }
-    #light-image-method-container .question-card .btn-next i.icon {
+    #light-image-method-container .question-card .btn-down i.icon {
       margin: 0 !important; }
 
 #light-image-method-container #q1 {
@@ -54,7 +73,7 @@
 #light-image-method-container .question {
   border: none !important;
   padding: 0 0;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.3em;
   line-height: 1.28571429em;
@@ -73,6 +92,17 @@
   #light-image-method-container .answer .field {
     margin: 0 auto;
     width: 80%; }
+
+#light-image-method-container .btn-container {
+  margin: 100px auto;
+  text-align: center; }
+  #light-image-method-container .btn-container .btn-next {
+    background: #f9dd91;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  #light-image-method-container .btn-container .btn-next:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
 
 #light-image-method-container .separation-bar {
   width: 80%;
@@ -168,42 +198,6 @@ header.menu-bar ul.topnav li.right {
 @media screen and (max-width: 480px) {
   header.menu-bar ul.topnav li.right, header.menu-bar ul.topnav li {
     float: none; } }
-
-.ui.question-card {
-  margin: 100px auto; }
-
-.ui.question {
-  border: none !important;
-  padding: 0 0;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  font-weight: 700;
-  font-size: 1.3em;
-  line-height: 1.28571429em;
-  text-transform: none;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.87);
-  display: block;
-  width: 80%;
-  border: 1px solid;
-  margin: 30px auto; }
-
-.ui.answer {
-  max-height: 500px;
-  width: 100%;
-  text-align: center; }
-  .ui.answer .field {
-    margin: 0 auto;
-    width: 80%; }
-
-.btn-down {
-  display: block;
-  margin: 50px auto;
-  color: dimgrey;
-  font-size: 12px;
-  width: 80px;
-  height: 20px;
-  text-align: center;
-  border: 1px solid dimgrey; }
 
 .separation-bar {
   width: 80%;

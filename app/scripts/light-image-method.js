@@ -6,4 +6,7 @@
     local.setItem('hoge', JSON.stringify(value))
     const hoge = local.getItem('hoge')
     console.log(hoge)
+
+
+
 }())

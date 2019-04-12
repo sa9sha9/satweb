@@ -53,47 +53,7 @@ header.menu-bar {
 
 
 
-.ui.question-card {
-  margin: 100px auto;
 
-}
-.ui.question {
-  border: none !important;
-  padding: 0 0;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  font-weight: 700;
-  font-size: 1.3em;
-  line-height: 1.28571429em;
-  text-transform: none;
-  text-align: center;
-  color: rgba(0,0,0,.87);
-  display: block;
-  width: 80%;
-  border: 1px solid;
-  margin: 30px auto;
-}
-
-.ui.answer {
-  max-height: 500px;
-  width: 100%;
-  text-align: center;
-
-  .field {
-    margin: 0 auto;
-    width: 80%
-  }
-}
-
-.btn-down {
-  display: block;
-  margin: 50px auto;
-  color: dimgrey;
-  font-size: 12px;
-  width: 80px;
-  height: 20px;
-  text-align: center;
-  border: 1px solid dimgrey;
-}
 
 .separation-bar {
   width: 80%;
