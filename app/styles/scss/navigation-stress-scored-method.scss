@@ -1,71 +1,32 @@
-#q2 {
 
-  .grid-container {
-    display: grid;
-    justify-content: center;
-    grid-gap: 1em;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+#stress-scored-method-container {
+  #q1 {
+    margin: 20% auto;
   }
 
-  .grid-item {
-    border: 1px solid #b8b8b8;
+  #q2 {
+    margin: 20% auto;
+    border: 1px solid #f9ecc0;
   }
 
+  #q3 {
+    margin: 20% auto;
+    border: 1px solid #f9ecc0;
 
-  .grid-row {
-    display: grid;
-    grid-gap: 0;
-    justify-content: center;
-    grid-template-rows: auto;
-    grid-template-columns: 3fr 1fr;
   }
 
-  .answer-label.grid-item {
-    grid-row: 1;
-    grid-column: 1;
+  .btn-container {
+    margin: 10% auto;
     text-align: center;
   }
 
-  .answer-value.grid-item {
-    grid-row: 1;
-    grid-column: 2;
-    text-align: center;
-  }
-}
-
-#q3 {
-  .grid-container {
-    display: grid;
-    justify-content: center;
-    grid-gap: 0;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+  .btn-next {
+    background: #f9dd91;
+    cursor: grab;
   }
 
-  .grid-row {
-    display: grid;
-    justify-content: center;
-    grid-gap: 0;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-
-    .stress-strength.grid-item {
-      border: 1px solid #b8b8b8;
-      text-align: center;
-      grid-column:1;
-    }
-    .stress-answer.grid-item {
-      border: 1px solid #b8b8b8;
-      text-align: center;
-      grid-column:2;
-    }
-    .stress-point.grid-item {
-      border: 1px solid #b8b8b8;
-      text-align: right;
-      grid-column:3;
-    }
+  .btn-next:active {
+    cursor: grabbing;
   }
-
 
 }
