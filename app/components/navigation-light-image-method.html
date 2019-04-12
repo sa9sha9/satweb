@@ -17,6 +17,7 @@
 </head>
 <body>
 
+
 <div class="ui right sidebar inverted vertical menu">
     <a class="item" href="dashboard.html">
         ダッシュボード
@@ -33,214 +34,215 @@
 </div>
 
 
-<header class="menu-bar pusher">
-    <ul class="topnav">
-        <li><h1 class="site-logo">SATWEB</h1></li>
-        <li class="right">
-            <div id="btn-hamburger" class="hamburger"><i class="bars icon"></i></div>
-        </li>
-    </ul>
-</header>
+<div class="pusher">
+    <header class="menu-bar">
+        <ul class="topnav">
+            <li><h1 class="site-logo">SATWEB</h1></li>
+            <li class="right">
+                <div id="btn-hamburger" class="hamburger"><i class="bars icon"></i></div>
+            </li>
+        </ul>
+    </header>
 
-<div id="light-image-method-container" class="pusher">
+    <div id="light-image-method-container">
 
-    <div id="q1" class="ui text container question-card">
-        <div class="ui  centered question">
-            あなたのストレスは何ですか？
+        <div id="q1" class="ui text container question-card">
+            <div class="ui  centered question">
+                あなたのストレスは何ですか？
+            </div>
+            <div class="ui form answer">
+                <div class="field">
+                    <textarea rows="2"></textarea>
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q2">
+                <i class="chevron down icon"></i>
+            </a>
         </div>
-        <div class="ui form answer">
-            <div class="field">
-                <textarea rows="2"></textarea>
+
+        <div id="q2" class="ui text container question-card">
+            <div class="ui  centered question">
+                それを色で表すとなんですか？
+                <br>目を閉じてお考えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    赤・茶色・黒・灰色・紫・紺色・水色・その他
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q3">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+
+        <div id="q3" class="ui text container question-card">
+            <div class="ui  centered question">
+                それを形で表すとなんですか？
+                <br>目を閉じてお考えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    ドロドロ・ファファ・尖っている ゴツ・球・四角・平ら
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q4">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+
+        <div id="q4" class="ui text container question-card">
+            <div class="ui  centered question">
+                {{selectedColor}} という色と、
+                <br>{{selectedForm}}という形をみていると、
+                <br>どのような身体違和感がどの箇所に生じますか？
+                <br>ひらめきでお答えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    <div>頭・顔・喉・首・肩・背中・腰・胸・お腹・腕・手足・全身・その他</div>
+                    <div>重い、ギュッとなる、ドキドキ、張る</div>
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q5">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+        <div id="q5" class="ui text container question-card">
+            <div class="ui  centered question">
+                その身体違和感のストレス度は主観的にどのくらいですか？
+                <br>ひらめきでお答えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    0% ~ 100%
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q6">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+
+        <div id="q6" class="ui text container question-card">
+            <div class="ui  centered question">
+                身体違和感のあるその場所にどのような暖色系の色の光で守られると、
+                <br>その場所は癒されると思いますか?
+                <br>ひらめきでお答えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    黄金色・黄色・クリーム色・白色・グ リーン色・オレンジ色・ピンク色・スカイブルー色 (複数可)
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q7">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+        <div id="q7" class="ui text container question-card">
+            <div class="ui  centered question">
+                その場所がその光で守られているイメージを思い浮かべ、
+                <br>身体違和感を消してください。
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q8">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+        <div id="q8" class="ui text container question-card">
+            <div class="ui  centered question">
+                ストレス度は何％になりましたか？
+            </div>
+            <div class="uai form answer">
+                <div class="field bordered">
+                    0% ~ 100%
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q9">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+        <div id="q9" class="ui text container question-card">
+            <div class="ui  centered question">
+                ストレス度が0%になると、
+                <br>あなたの性格はどのように変化しますか？
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    穏やか・冷静・おおらか・気にしない・明るい・自信がある・素直・やさしい・寛容・その他()
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q10">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+        <div id="q10" class="ui text container question-card">
+            <div class="ui  centered question">
+                そのような性格に変化したあなたなら、
+                <br>最初に挙げたストレスに対してどのような行動で対処しますか？
+                <br>ひらめきでお答えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    <textarea cols="30" rows="2" placeholder="(相手と冷静に話し合う)"></textarea>
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q11">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+
+        <div id="q11" class="ui text container question-card">
+            <div class="ui  centered question">
+                そのように行動したあと、
+                <br>どのような結果が予想されますか？
+                <br>ひらめきでお答えください。
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    <textarea cols="30" rows="2" placeholder="(上手くいくなど)"></textarea>
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q12">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+
+        <div id="q12" class="ui text container question-card">
+            <div class="ui  centered question">
+                今のあなたは、 最初に挙げたストレスに対して
+                <br>どのように感じるようになりますか？
+            </div>
+            <div class="ui form answer">
+                <div class="field bordered">
+                    気にならない、そんなこともあった、安心した・安心できた、なるようになる、どうでもいいと思った、 あったかくなった、愉しくなった、勇気づけられた、その他
+                </div>
+            </div>
+            <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q13">
+                <i class="chevron down icon"></i>
+            </a>
+        </div>
+
+        <div id="q13" class="ui text container question-card">
+            <div class="ui  centered question">
+                お疲れさまでした。
+                <br>光イメージ法はこれでおわりです。
             </div>
         </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q2">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
 
-    <div id="q2" class="ui text container question-card">
-        <div class="ui  centered question">
-            それを色で表すとなんですか？
-            <br>目を閉じてお考えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                赤・茶色・黒・灰色・紫・紺色・水色・その他
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q3">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-
-    <div id="q3" class="ui text container question-card">
-        <div class="ui  centered question">
-            それを形で表すとなんですか？
-            <br>目を閉じてお考えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                ドロドロ・ファファ・尖っている ゴツ・球・四角・平ら
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q4">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-
-    <div id="q4" class="ui text container question-card">
-        <div class="ui  centered question">
-            {{selectedColor}} という色と、
-            <br>{{selectedForm}}という形をみていると、
-            <br>どのような身体違和感がどの箇所に生じますか？
-            <br>ひらめきでお答えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                <div>頭・顔・喉・首・肩・背中・腰・胸・お腹・腕・手足・全身・その他</div>
-                <div>重い、ギュッとなる、ドキドキ、張る</div>
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q5">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-    <div id="q5" class="ui text container question-card">
-        <div class="ui  centered question">
-            その身体違和感のストレス度は主観的にどのくらいですか？
-            <br>ひらめきでお答えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                0% ~ 100%
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q6">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-
-    <div id="q6" class="ui text container question-card">
-        <div class="ui  centered question">
-            身体違和感のあるその場所にどのような暖色系の色の光で守られると、
-            <br>その場所は癒されると思いますか?
-            <br>ひらめきでお答えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                黄金色・黄色・クリーム色・白色・グ リーン色・オレンジ色・ピンク色・スカイブルー色 (複数可)
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q7">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-    <div id="q7" class="ui text container question-card">
-        <div class="ui  centered question">
-            その場所がその光で守られているイメージを思い浮かべ、
-            <br>身体違和感を消してください。
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q8">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-    <div id="q8" class="ui text container question-card">
-        <div class="ui  centered question">
-            ストレス度は何％になりましたか？
-        </div>
-        <div class="uai form answer">
-            <div class="field bordered">
-                0% ~ 100%
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q9">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-    <div id="q9" class="ui text container question-card">
-        <div class="ui  centered question">
-            ストレス度が0%になると、
-            <br>あなたの性格はどのように変化しますか？
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                穏やか・冷静・おおらか・気にしない・明るい・自信がある・素直・やさしい・寛容・その他()
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q10">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-    <div id="q10" class="ui text container question-card">
-        <div class="ui  centered question">
-            そのような性格に変化したあなたなら、
-            <br>最初に挙げたストレスに対してどのような行動で対処しますか？
-            <br>ひらめきでお答えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                <textarea cols="30" rows="2" placeholder="(相手と冷静に話し合う)"></textarea>
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q11">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-
-    <div id="q11" class="ui text container question-card">
-        <div class="ui  centered question">
-            そのように行動したあと、
-            <br>どのような結果が予想されますか？
-            <br>ひらめきでお答えください。
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                <textarea cols="30" rows="2" placeholder="(上手くいくなど)"></textarea>
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q12">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-
-    <div id="q12" class="ui text container question-card">
-        <div class="ui  centered question">
-            今のあなたは、 最初に挙げたストレスに対して
-            <br>どのように感じるようになりますか？
-        </div>
-        <div class="ui form answer">
-            <div class="field bordered">
-                気にならない、そんなこともあった、安心した・安心できた、なるようになる、どうでもいいと思った、 あったかくなった、愉しくなった、勇気づけられた、その他
-            </div>
-        </div>
-        <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q13">
-            <i class="chevron down icon"></i>
-        </a>
-    </div>
-
-    <div id="q13" class="ui text container question-card">
-        <div class="ui  centered question">
-            お疲れさまでした。
-            <br>光イメージ法はこれでおわりです。
+        <div class="btn-container ui center aligned">
+            <a class="btn-next huge ui button" href="dashboard.html">ダッシュボードへ</a>
         </div>
     </div>
 
-    <div class="btn-container ui center aligned">
-        <a class="btn-next huge ui button" href="dashboard.html">ダッシュボードへ</a>
-    </div>
 </div>
-
-
 </body>
 
 <!-- Custom -->
