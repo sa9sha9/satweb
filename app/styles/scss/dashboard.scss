@@ -1,0 +1,38 @@
+#dashboard-container {
+
+  #dashboard-history { // idはメディアにより固有
+    width: 80%;
+    margin: 100px auto;
+    padding: 3em;
+
+    h1 {
+      text-align: center;
+      border-bottom: 5px solid #f9dd91;
+    }
+
+    .history {
+      width: 80%;
+
+    }
+  }
+
+
+  #dashboard-navigation {
+    margin: 10% auto;
+
+    a {
+      cursor: grab;
+    }
+
+    a:active {
+      cursor: grabbing;
+    }
+    a:hover {
+      background: #f8f9e2;
+    }
+
+    p {
+      margin: 5px;
+    }
+  }
+}

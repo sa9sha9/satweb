@@ -45,6 +45,19 @@ header.menu-bar {
 
 .ui.question-card {
   margin: 100px auto;
+  height: 700px;
+
+  .btn-next {
+    display: block;
+    margin: 50px auto 100px;
+    width: 100px;
+
+    i.icon {
+      margin: 0 !important;
+    }
+  }
+
+
 
 }
 .ui.question {

@@ -1,6 +1,11 @@
-@import "navigation-stress-quantification";
-@import "navigation-light-image-method.scss";
+@import "navigation-stress-scored-method";
+@import "navigation-light-image-method";
 @import "media";
+@import "dashboard";
+
+html {
+  scroll-behavior: smooth;
+}
 
 header.menu-bar {
 

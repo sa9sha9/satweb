@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>メディア</title>
-
+    <!-- jQuery -->
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -14,92 +14,88 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
     <link rel="stylesheet" type="text/css"
           href="../styles/css/main.css">
+
 </head>
 <body>
 
-<header class="menu-bar">
+<div class="ui right sidebar inverted vertical menu">
+    <a class="item" href="dashboard.html">
+        ダッシュボード
+    </a>
+    <a class="item" href="navigation-light-image-method.html">
+        光イメージ法ナビゲーション
+    </a>
+    <a class="item" href="navigation-stress-scored-method.html">
+        ストレス数値化法ナビゲーション
+    </a>
+    <a class="item" disabled="disabled">
+        メディア
+    </a>
+</div>
+
+<header class="menu-bar pusher">
     <ul class="topnav">
         <li><h1 class="site-logo">SATWEB</h1></li>
         <li class="right">
-            <div class="hamburger">三</div>
+            <div id="btn-hamburger" class="hamburger"><i class="bars icon"></i></div>
         </li>
     </ul>
 </header>
-<div class="side-menu overlay"></div>
+<a href="#media-what-can-not-i-do">ほげ</a>
 
-<div id="media-container">
-
-    <div id="media-what-is-this-service" class="ui header media">
-        <h1>何のサービス？</h1>
-        <p>
-            わたしは、日々あなたを悩ませているストレスの元凶を突き止めて、その悩みを軽減するためのカウンセリングサービスです。
-        </p>
-        <p>
-            しかし本当にカウンセリングを行うのは、わたしではありません。カウンセリングを行うのは、あなた自身です。
-        </p>
-        <p>
-            セルフカウンセリングによって、自身の中で芽生えるストレスを感じ取り、そして認知します。
-        </p>
-        <p>
-            その手助けをするのが、わたしの役割です。
-        </p>
-        <p>
-            わたしはSAT療法、他にも情動認知行動療法とよばれる心理カウンセリング手法をつかってあなたをサポートします。
-        </p>
-        <p>
-            あなたがあなたの悩みをなくしたいと思う前向きな気持ちがあれば、きっとSAT療法はあなたの役に立つはずです。
-        </p>
-        <p>
-            いっしょに、悩みのない健やかな日々を取り戻しましょう。
-        </p>
-
-    </div>
-
-    <div id="media-what-can-i-do" class="ui header media">
-        <h1>何ができるの？？</h1>
-        <p>
+<div id="media-container" class="pusher ui stackable grid">
+    <div id="media-what-can-i-do" class="media ui container">
+        <h1 class="ui header">何ができるの？？</h1>
+        <p class="p1 ui center aligned  container">
             なんらかの心理障害を感じている人はその原因がどこにあるのか、一体自分中で何が起こっているのかわからないという混乱状態に陥っていることが多いのです。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             そんな人のための心理療法として、いくつかの方法が現代では開発されています。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             その中のひとつに、SAT療法というものがあります。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             これは「情動認知行動療法」と呼ばれる手法で、「情動」を刺激することがカンタンにストレスを軽減することができるのです。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             SAT療法のメソッドのひとつに「光イメージ法」というものがあります。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             わたしは主に、この「光イメージ法」をあなたが実践するサポートをいたします。
         </p>
     </div>
     <div id="media-what-can-not-i-do" class="ui header media">
         <h1>何ができないの？？</h1>
-        <p>
+        <p class="p1 ui center aligned  container">
             しかし、残念なことにSAT療法にも限界があります。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             心理療法の効き目には個人差がとても大きくあります。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             自分自身と向き合い、自分のあり方を見つめ直したいというモチベーションを明確に持っている人には効果が現れやすいものです。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             また、わたしはほんとうのセラピストではありません。あなたが自分自身の悩みと向き合うサポーターでしかないのです。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             そういった理由から、わたしが援助するSAT療法は絶対的に病気を直す特効薬ではないのです。
         </p>
-        <p>
+        <p class="p1 ui center aligned  container">
             これらを踏まえた上で、SAT療法を試してみたい方はぜひ、わたしの手を取ってください。
         </p>
 
-        <div class="btn-next">手を取る</div>
+        <div class="btn-container ui center aligned">
+            <a class="btn-next huge ui button" href="dashboard.html">手を取る</a>
+        </div>
     </div>
 
 </div>
+
 </body>
+
+<!-- Custom -->
+<script src="../scripts/interaction.js"></script>
+
 </html>

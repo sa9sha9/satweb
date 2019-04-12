@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ストレス数値化法 ナビゲーター</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <!-- Semantic UI-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="../styles/css/main.css">
+</head>
+<body>
+<div class="ui right sidebar inverted vertical menu">
+    <a class="item" href="dashboard.html">
+        ダッシュボード
+    </a>
+    <a class="item" href="navigation-light-image-method.html">
+        光イメージ法ナビゲーション
+    </a>
+    <a class="item" disabled="disabled">
+        ストレス数値化法ナビゲーション
+    </a>
+    <a class="item" href="media-who-am-i.html">
+        メディア
+    </a>
+</div>
+
+
+<header class="menu-bar pusher">
+    <ul class="topnav">
+        <li><h1 class="site-logo">SATWEB</h1></li>
+        <li class="right">
+            <div id="btn-hamburger" class="hamburger"><i class="bars icon"></i></div>
+        </li>
+    </ul>
+</header>
+
+<div id="stress-scored-method-container" class="pusher">
+
+    <div id="q1" class="ui text container question-card">
+        <div class="ui  centered question">
+            最近、次のうちストレスに感じるものはありますか？
+            <br>当てはまるものにチェックをつけてください。
+        </div>
+
+        <div class="btn-down"> ▽</div>
+    </div>
+
+    <div id="q2" class="ui text container question-card">
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="answer-label grid-item"><span>自分の将来のこと</span></div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress1"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress1"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress1"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress2"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress2"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress2"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress3"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress3"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress3"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress4"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress4"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress5"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress5"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress5"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress6"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress6"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress6"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress7"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress7"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress7"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress8"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress8"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress8"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress9"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress9"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress9"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress10"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress10"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress10"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress11"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress11"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress11"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress12"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress12"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress12"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress13"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress13"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress13"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress14"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress14"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress14"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress15"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress15"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress15"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress16"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress16"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress16"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress17"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress17"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress17"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress18"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress18"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress18"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress19"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress19"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress19"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress20"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress20"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress20"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress21"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress21"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress21"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress22"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress22"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress22"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress23"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress23"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress23"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress24"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress24"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress24"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress25"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress25"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress25"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress26"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress26"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress26"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress27"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress27"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress27"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress28"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress28"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress28"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress29"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress29"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress29"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress30"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress30"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress30"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress31"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress31"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress31"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress32"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress32"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress32"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress33"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress33"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress33"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="answer-label grid-item">自分の将来のこと</div>
+                <div class="answer-value grid-item">
+                    <div class="ui form">
+                        <div class="ui field">
+                            <label>大いに当てはまる<input type="radio" name="answer-stress34"></label>
+                            <label>当てはまる<input type="radio" name="answer-stress34"></label>
+                            <label>当てはまらない<input type="radio" name="answer-stress34"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-down"> ▽</div>
+        <div class="separation-bar"></div>
+    </div>
+
+
+    <div id="q3" class="ui text container question-card">
+        <div class="ui  centered question">
+            次のストレスが、
+            <br>あなたのストレス源です。
+        </div>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="stress-strength grid-item">かなり強い</div>
+                <div class="stress-answer grid-item">仕事のこと</div>
+                <div class="stress-point grid-item"><span>点</span></div>
+            </div>
+            <div class="grid-row">
+                <div class="stress-strength grid-item">強い</div>
+                <div class="stress-answer grid-item">友人関係のこと</div>
+                <div class="stress-point grid-item"><span>点</span></div>
+            </div>
+            <div class="grid-row">
+                <div class="stress-strength grid-item">中くらい</div>
+                <div class="stress-answer grid-item">将来のこと</div>
+                <div class="stress-point grid-item"><span>点</span></div>
+            </div>
+            <div class="grid-row">
+                <div class="stress-strength grid-item">弱い</div>
+                <div class="stress-answer grid-item">恋愛のこと</div>
+                <div class="stress-point grid-item"><span>点</span></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="btn-down"> ▽</div>
+    <div class="separation-bar"></div>
+</div>
+
+
+- 最近、次のことで気になることがありますか? 当てはまるものにチェックをつけてください。
+}
+1. 自分の将来のこと
+2. 家族や親族の将来のこと
+3. 自分の健康のこと(体力や眼、耳の衰え)
+4. 家族の健康のこと
+5. 出費がかさむこと。
+6. 借金やローンを抱えていること
+7. 家族に対する責任が重すぎること
+8. 収入が少ないこと
+9. 職場(学生の場合は学校)や取引先との人間関係のこと
+10. 家族(同居以外を含む)との人間関係のこと。
+11. 親戚関係のこと
+12. 近所関係のこと
+13. 毎日の仕事(炊事、洗濯など)、育児について
+14. 今の仕事(勉強などを含む)のこと。
+15. 他人に妨害されたり、足を引っ張られること
+16. 義理の付き合いをしなければいけないこと
+17. 暇をもてあましがちなこと。
+18. どうしてもやりとげなければならないことが控えていること。
+19. 孤独なこと
+20. 生きがいがもてないこと
+21. 異性関係のこと
+22. 友人関係のこと
+23. いつ解雇(学生の場合は退学)させられるかということ
+24. 退職後の生活のこと
+25. 自分の外見や容姿に自信が持てないこと
+26. 生活していく上での性差別(男性の場合も含む)について
+27. 生活が不規則なこと
+28. 周りからの期待が高すぎること
+29. 陰口をたたかれたり、噂話をされること
+30. 過去のことでこだわりがあること
+31. 公害(大気汚染や近隣騒音など)について
+32. コンピュータなどの新しい機械についていけないこと
+33. 仕事の量が多すぎること
+34. 朝夕のラッシュや遠距離通勤(通学を含む)のこと
+
+</body>
+
+<!-- Custom -->
+<script src="../scripts/interaction.js"></script>
+
+</html>

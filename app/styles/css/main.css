@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #q2 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -116,7 +117,14 @@ header.menu-bar ul.topnav li.right {
     float: none; } }
 
 .ui.question-card {
-  margin: 100px auto; }
+  margin: 100px auto;
+  height: 700px; }
+  .ui.question-card .btn-next {
+    display: block;
+    margin: 50px auto 100px;
+    width: 100px; }
+    .ui.question-card .btn-next i.icon {
+      margin: 0 !important; }
 
 .ui.question {
   border: none !important;
@@ -159,23 +167,55 @@ header.menu-bar ul.topnav li.right {
 #media-container .media {
   width: 80%;
   margin: 100px auto;
-  border: 1px solid #f9ecc0;
-  text-align: center;
   padding: 3em; }
   #media-container .media h1 {
+    text-align: center;
     border-bottom: 5px solid #f9dd91; }
+  #media-container .media p {
+    font-family: '凸版文久ゴシック', Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.0em;
+    margin: 50% auto;
+    width: 70%; }
+  #media-container .media p.p1 {
+    margin: 20% auto 50% auto; }
+  #media-container .media .btn-container {
+    margin: 0 auto;
+    text-align: center; }
+  #media-container .media .btn-next {
+    background: #f9dd91;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  #media-container .media .btn-next:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
 
-#media-what-can-not-i-do .btn-next {
-  margin: 0 auto;
-  width: 100px;
-  border: 3px solid #f9dd91;
-  padding: 5px;
-  cursor: -webkit-grab;
-  cursor: grab; }
+#dashboard-container #dashboard-history {
+  width: 80%;
+  margin: 100px auto;
+  padding: 3em; }
+  #dashboard-container #dashboard-history h1 {
+    text-align: center;
+    border-bottom: 5px solid #f9dd91; }
+  #dashboard-container #dashboard-history .history {
+    width: 80%; }
 
-#media-what-can-not-i-do .btn-next:active {
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
+#dashboard-container #dashboard-navigation {
+  margin: 10% auto; }
+  #dashboard-container #dashboard-navigation a {
+    cursor: -webkit-grab;
+    cursor: grab; }
+  #dashboard-container #dashboard-navigation a:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  #dashboard-container #dashboard-navigation a:hover {
+    background: #f8f9e2; }
+  #dashboard-container #dashboard-navigation p {
+    margin: 5px; }
+
+html {
+  scroll-behavior: smooth; }
 
 header.menu-bar .site-logo {
   margin: auto 10px; }
