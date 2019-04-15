@@ -7,6 +7,15 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width : 100% ;
+  height : auto ;
+}
+
+#header {
+  background: #f9dd91;
+}
+
 header.menu-bar {
 
   .site-logo {
