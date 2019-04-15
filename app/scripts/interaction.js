@@ -7,6 +7,11 @@
         ;
     });
 
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+
+
     $(document).on('click', '.js-smooth-scroll', (e) => {
         const target = e.target;
         console.log(target)

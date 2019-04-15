@@ -48,12 +48,11 @@
     </header>
 
     <div id="light-image-method-container">
-
         <div id="q1" class="ui text container question-card">
             <div class="ui  centered question">
                 あなたのストレスは何ですか？
             </div>
-            <div class="ui form answer">
+            <div id="lim-what-kind-of-stress" class="ui form answer">
                 <div class="field">
                     <textarea rows="2"></textarea>
                 </div>
@@ -66,13 +65,47 @@
         <div id="q2" class="ui text container question-card">
             <div class="ui  centered question">
                 それを色で表すとなんですか？
-                <br>目を閉じてお考えください。
             </div>
-            <div class="ui form answer">
-                <div class="field bordered">
-                    赤・茶色・黒・灰色・紫・紺色・水色・その他
+            <div id="lim-what-color" class="ui selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">目を閉じて想像してみてください。</div>
+                <div class="menu">
+                    <div class="item" data-value="赤色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        赤色
+                    </div>
+                    <div class="item" data-value="茶色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        茶色
+                    </div>
+                    <div class="item" data-value="黒色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        黒色
+                    </div>
+                    <div class="item" data-value="灰色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        灰色
+                    </div>
+                    <div class="item" data-value="紫色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+                        紫色
+                    </div>
+                    <div class="item" data-value="紺色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+                        紺色
+                    </div>
+                    <div class="item" data-value="水色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        水色
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
                 </div>
             </div>
+
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q3">
                 <i class="chevron down icon"></i>
             </a>
@@ -80,13 +113,47 @@
 
 
         <div id="q3" class="ui text container question-card">
-            <div class="ui  centered question">
+            <div class="ui centered question">
                 それを形で表すとなんですか？
-                <br>目を閉じてお考えください。
             </div>
-            <div class="ui form answer">
-                <div class="field bordered">
-                    ドロドロ・ファファ・尖っている ゴツ・球・四角・平ら
+
+            <div id="lim-what-shape" class="ui selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">目を閉じて想像してみてください。</div>
+                <div class="menu">
+                    <div class="item" data-value="ドロドロ">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        ドロドロ
+                    </div>
+                    <div class="item" data-value="ファファ">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        ファファ
+                    </div>
+                    <div class="item" data-value="トゲトゲ">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        トゲトゲ
+                    </div>
+                    <div class="item" data-value="ゴツゴツ">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        ゴツゴツ
+                    </div>
+                    <div class="item" data-value="球">
+                        <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+                        球
+                    </div>
+                    <div class="item" data-value="四角">
+                        <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+                        四角
+                    </div>
+                    <div class="item" data-value="平">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        平ら
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q4">
@@ -94,18 +161,98 @@
             </a>
         </div>
 
-
         <div id="q4" class="ui text container question-card">
             <div class="ui  centered question">
-                {{selectedColor}} という色と、
-                <br>{{selectedForm}}という形をみていると、
-                <br>どのような身体違和感がどの箇所に生じますか？
+                <span id="lim-selected-color"> nil </span>という色と、
+                <br><span id="lim-selected-shape"> nil </span>という形をみていると、
+                <br>どのような身体違和感が、どの箇所に生じますか？
                 <br>ひらめきでお答えください。
             </div>
-            <div class="ui form answer">
-                <div class="field bordered">
-                    <div>頭・顔・喉・首・肩・背中・腰・胸・お腹・腕・手足・全身・その他</div>
-                    <div>重い、ギュッとなる、ドキドキ、張る</div>
+            <div id="lim-which-body-place" class="ui selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">どのような箇所に？</div>
+                <div class="menu">
+                    <div class="item" data-value="頭">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        頭
+                    </div>
+                    <div class="item" data-value="顔">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        顔
+                    </div>
+                    <div class="item" data-value="喉">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        喉
+                    </div>
+                    <div class="item" data-value="首">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        首
+                    </div>
+                    <div class="item" data-value="肩">
+                        <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
+                        肩
+                    </div>
+                    <div class="item" data-value="背中">
+                        <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
+                        背中
+                    </div>
+                    <div class="item" data-value="腰">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        腰
+                    </div>
+                    <div class="item" data-value="胸">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        胸
+                    </div>
+                    <div class="item" data-value="お腹">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        お腹
+                    </div>
+                    <div class="item" data-value="腕">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        腕
+                    </div>
+                    <div class="item" data-value="手足">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        手足
+                    </div>
+                    <div class="item" data-value="全身">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        全身
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
+                </div>
+            </div>
+            <div class="ui text container">に、</div>
+            <div id="lim-what-feeling" class="ui selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">どのような身体違和感？</div>
+                <div class="menu">
+                    <div class="item" data-value="重い">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        重い
+                    </div>
+                    <div class="item" data-value="ギュッとなる">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        ギュッとなる
+                    </div>
+                    <div class="item" data-value="ドキドキ">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        ドキドキ
+                    </div>
+                    <div class="item" data-value="張る">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        張る
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q5">
@@ -120,7 +267,7 @@
             </div>
             <div class="ui form answer">
                 <div class="field bordered">
-                    0% ~ 100%
+                    <textarea rows="1" placeholder="0 ~ 100"></textarea>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q6">
@@ -131,13 +278,51 @@
 
         <div id="q6" class="ui text container question-card">
             <div class="ui  centered question">
-                身体違和感のあるその場所にどのような暖色系の色の光で守られると、
-                <br>その場所は癒されると思いますか?
+                その身体違和感は、どのような色の光で守 られると、
+                <br>癒されると思いますか?
                 <br>ひらめきでお答えください。
             </div>
-            <div class="ui form answer">
-                <div class="field bordered">
-                    黄金色・黄色・クリーム色・白色・グ リーン色・オレンジ色・ピンク色・スカイブルー色 (複数可)
+            <div id="lim-what-color-to-cure" class="ui multiple selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">複数回答(可)</div>
+                <div class="menu">
+                    <div class="item" data-value="黄金色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        黄金色
+                    </div>
+                    <div class="item" data-value="黄色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        黄色
+                    </div>
+                    <div class="item" data-value="クリーム色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        クリーム色
+                    </div>
+                    <div class="item" data-value="白色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        白色
+                    </div>
+                    <div class="item" data-value="グリーン色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        グリーン色
+                    </div>
+                    <div class="item" data-value="オレンジ色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        オレンジ色
+                    </div>
+                    <div class="item" data-value="ピンク色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        ピンク色
+                    </div>
+                    <div class="item" data-value="スカイブルー色">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        スカイブルー色
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q7">
@@ -159,9 +344,9 @@
             <div class="ui  centered question">
                 ストレス度は何％になりましたか？
             </div>
-            <div class="uai form answer">
+            <div class="ui form answer">
                 <div class="field bordered">
-                    0% ~ 100%
+                    <textarea rows="1" placeholder="0% ~ 100%"></textarea>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q9">
@@ -174,9 +359,51 @@
                 ストレス度が0%になると、
                 <br>あなたの性格はどのように変化しますか？
             </div>
-            <div class="ui form answer">
-                <div class="field bordered">
-                    穏やか・冷静・おおらか・気にしない・明るい・自信がある・素直・やさしい・寛容・その他()
+            <div id="lim-what-your-personality" class="ui selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">ひらめきでお答えください。</div>
+                <div class="menu">
+                    <div class="item" data-value="穏やか">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        穏やか
+                    </div>
+                    <div class="item" data-value="冷静">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        冷静
+                    </div>
+                    <div class="item" data-value="おおらか">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        おおらか
+                    </div>
+                    <div class="item" data-value="気にしない">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        気にしない
+                    </div>
+                    <div class="item" data-value="明るい">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        明るい
+                    </div>
+                    <div class="item" data-value="自信がある">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        自信がある
+                    </div>
+                    <div class="item" data-value="素直">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        素直
+                    </div>
+                    <div class="item" data-value="やさしい">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        やさしい
+                    </div>
+                    <div class="item" data-value="寛容">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        寛容
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q10">
@@ -187,12 +414,18 @@
         <div id="q10" class="ui text container question-card">
             <div class="ui  centered question">
                 そのような性格に変化したあなたなら、
-                <br>最初に挙げたストレスに対してどのような行動で対処しますか？
+                <br>最初に挙げたストレス
+                <div class="ui form answer">
+                    <div class="field">
+                        <textarea  id="lim-selected-stress"  rows="2" disabled></textarea>
+                    </div>
+                </div>
+                に対してどのような行動で対処しますか？
                 <br>ひらめきでお答えください。
             </div>
             <div class="ui form answer">
                 <div class="field bordered">
-                    <textarea cols="30" rows="2" placeholder="(相手と冷静に話し合う)"></textarea>
+                    <textarea id="lim-what-your-action" cols="30" rows="2" placeholder="(例: 相手と冷静に話し合う)"></textarea>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q11">
@@ -209,7 +442,7 @@
             </div>
             <div class="ui form answer">
                 <div class="field bordered">
-                    <textarea cols="30" rows="2" placeholder="(上手くいくなど)"></textarea>
+                    <textarea id="what-your-result" cols="30" rows="2" placeholder="(例: 上手くいくなど)"></textarea>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q12">
@@ -220,12 +453,56 @@
 
         <div id="q12" class="ui text container question-card">
             <div class="ui  centered question">
-                今のあなたは、 最初に挙げたストレスに対して
+                今のあなたは、 最初に挙げたストレス
+                <div class="ui form answer">
+                    <div class="field">
+                        <textarea  id="lim-selected-stress-2"  rows="2" disabled></textarea>
+                    </div>
+                </div>
+                に対して
                 <br>どのように感じるようになりますか？
             </div>
-            <div class="ui form answer">
-                <div class="field bordered">
-                    気にならない、そんなこともあった、安心した・安心できた、なるようになる、どうでもいいと思った、 あったかくなった、愉しくなった、勇気づけられた、その他
+            <div id="lim-what-your-feeling-with-stress" class="ui selection dropdown answer">
+                <input type="hidden" name="user">
+                <i class="dropdown icon"></i>
+                <div class="default text">ひらめきでお答えください。</div>
+                <div class="menu">
+                    <div class="item" data-value="気にならない">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        気にならない
+                    </div>
+                    <div class="item" data-value="そんなこともあった">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        そんなこともあった
+                    </div>
+                    <div class="item" data-value="安心した">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        安心した
+                    </div>
+                    <div class="item" data-value="なるようになる">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        なるようになる
+                    </div>
+                    <div class="item" data-value="どうでもいいと思った">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        どうでもいいと思った
+                    </div>
+                    <div class="item" data-value="あったかくなった">
+                        <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
+                        あったかくなった
+                    </div>
+                    <div class="item" data-value="愉しくなった">
+                        <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
+                        愉しくなった
+                    </div>
+                    <div class="item" data-value="勇気づけられた">
+                        <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
+                        勇気づけられた
+                    </div>
+                    <div class="item" data-value="その他">
+                        <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
+                        その他
+                    </div>
                 </div>
             </div>
             <a class="big ui gray basic button btn-down js-smooth-scroll" href="#q13">
@@ -250,5 +527,6 @@
 
 <!-- Custom -->
 <script src="../scripts/interaction.js"></script>
+<script src="../scripts/light-image-method.js"></script>
 
 </html>
