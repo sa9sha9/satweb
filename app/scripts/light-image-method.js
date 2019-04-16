@@ -1,10 +1,14 @@
 (function() {
     'use strict';
+
+    const globalKey = 'light-image-method'
     const local = localStorage;
+    local.removeItem(globalKey) // Initialize localStorage for light-image-method
 
     // 光イメージ法を実施した時の固有番号
     const hash = Date.now()
-    local.setItem('id', hash)
+    updateStorage('id', hash)
+
 
     // ストレスの内容
     $('#lim-what-kind-of-stress').on('change', (e) => {
@@ -44,12 +48,20 @@
 
 
     function updateStorage(key, value) {
-        local.setItem(key, JSON.stringify(value))
+        // Get existing data
+        let data = getData(globalKey) || '{}'
+        data = JSON.parse(data) // { 'lim-what-kind-of-stress': 'ほげほげ', ... }
+
+        // Push values to existing data
+        data[key] = value
+
+        // Update localStorage
+        local.setItem(globalKey, JSON.stringify(data))
     }
 
     function getData(key) {
         const data = local.getItem(key)
-        console.log(data)
+        return data
     }
 
 

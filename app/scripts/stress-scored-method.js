@@ -1,10 +1,9 @@
 (function() {
     'use strict';
-    const local = localStorage;
 
-    // 光イメージ法を実施した時の固有番号
-    const hash = Date.now()
-    local.setItem('id', hash)
+    const globalKey = 'stress-scored-method'
+    const local = localStorage;
+    local.removeItem(globalKey) // Initialize localStorage for stress-scored-method
 
     // 全ての質問項目にトリガーをつける
     $('.answer-value').on('change', (e) => {
@@ -14,34 +13,16 @@
         updateStorage(key, value)
     })
 
-    // ストレスの内容
-    $('#lim-what-kind-of-stress').on('change', (e) => {
-        console.log(`key: ${e.currentTarget.id}, value: ${e.target.value} `)
-
-        const key = e.currentTarget.id
-        const value = e.target.value
-
-        updateStorage(key, value)
-
-        $('#lim-selected-stress').val(value);
-        $('#lim-selected-stress-2').val(value);
-    })
-
-
     function updateStorage(key, value) {
-        const globalKey = 'stress-scored-method'
         // Get existing data
         let data = getData(globalKey) || '{}'
         data = JSON.parse(data) // { 'answer-stress1': 2, ... }
 
-        // Push values in existing data
+        // Push values to existing data
         data[key] = value
 
-
         // Update localStorage
-        local.setItem('stress-scored-method', JSON.stringify(data))
-
-        return
+        local.setItem(globalKey, JSON.stringify(data))
 
         // 数値計算
         const score = calScore(data)
@@ -60,20 +41,19 @@
             console.error('Error: calScore()')
         }
 
-    }
 
+    }
 
     function calScore(data) {
         let sum = 0;
-        for( const v of data ) {
-            sum += v
+        for( const v in data ) {
+            sum += Number.parseInt(data[v])
         }
         return sum
     }
 
     function getData(key) {
         const data = local.getItem(key)
-        console.log(data)
         return data
     }
 
