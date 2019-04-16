@@ -67,6 +67,12 @@
 #light-image-method-container #q1 {
   margin: 20% auto; }
 
+#light-image-method-container #q5 .field {
+  display: inline-block;
+  width: 120px; }
+  #light-image-method-container #q5 .field textarea {
+    overflow: hidden; }
+
 #light-image-method-container #q13 {
   margin: 20% auto; }
 
@@ -205,6 +211,18 @@ header.menu-bar ul.topnav li.right {
 @media screen and (max-width: 480px) {
   header.menu-bar ul.topnav li.right, header.menu-bar ul.topnav li {
     float: none; } }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.center-text {
+  text-align: center; }
+
+.center-block {
+  margin: 0 auto; }
 
 .separation-bar {
   width: 80%;

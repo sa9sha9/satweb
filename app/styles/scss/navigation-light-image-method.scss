@@ -18,6 +18,17 @@
     margin: 20% auto;
   }
 
+  #q5 {
+    .field {
+      display: inline-block;
+      width: 120px;
+
+      textarea {
+        overflow: hidden;
+      }
+    }
+  }
+
   #q13 {
     margin: 20% auto;
   }

@@ -42,6 +42,7 @@
         $('#lim-selected-shape').text(value);
     })
 
+
     function updateStorage(key, value) {
         local.setItem(key, JSON.stringify(value))
     }

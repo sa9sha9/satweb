@@ -16,6 +16,7 @@ img {
   background: #f9dd91;
 }
 
+
 header.menu-bar {
 
   .site-logo {
@@ -60,7 +61,19 @@ header.menu-bar {
 }
 
 
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
 
+.center-text {
+  text-align: center;
+}
+.center-block {
+  margin: 0 auto;
+}
 
 
 
