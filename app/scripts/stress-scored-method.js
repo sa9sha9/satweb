@@ -104,7 +104,7 @@
         for (const v in stress) {
             if (v !== 'id' && // hashが入るとバグるので入れないこと
                 Number.parseInt(stress[v]) > 1) {
-                const $elm = $(`<div class="stress-source column">${stressSource[v]}</div>`)
+                const $elm = $(`<div class="row">${stressSource[v]}</div>`)
                 $('#stress-scored-result-source').append($elm)
             }
         }

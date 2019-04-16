@@ -2,7 +2,6 @@
   background-image: url("../../images/main-visual-light-image-method.png");
   width: 100%;
   height: 500px;
-  margin: 0 !important;
   background-size: cover;
 
   #main-visual-text {
@@ -11,6 +10,7 @@
     line-height: 500px;
     color: #55454c;
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0;
   }
 }
 

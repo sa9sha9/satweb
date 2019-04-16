@@ -2,14 +2,14 @@
   background-image: url("../../images/main-visual-stress-scored-method2.jpeg");
   width: 100%;
   height: 500px;
-  margin: 0 !important;
   background-size: cover; }
   #main-visual-stress-scored-method #main-visual-text {
     font-size: 64px;
     text-align: center;
     line-height: 500px;
     color: #55454c;
-    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0; }
 
 #stress-scored-method-container .question {
   border: none !important;
@@ -80,14 +80,14 @@
   background-image: url("../../images/main-visual-light-image-method.png");
   width: 100%;
   height: 500px;
-  margin: 0 !important;
   background-size: cover; }
   #main-visual-light-image-method #main-visual-text {
     font-size: 64px;
     text-align: center;
     line-height: 500px;
     color: #55454c;
-    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0; }
 
 #light-image-method-container .question-card {
   margin: 50% auto; }
