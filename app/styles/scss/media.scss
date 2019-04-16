@@ -1,27 +1,137 @@
+#media-introduction {
+  margin: 0 0 100px 0 !important;
 
-#media-container {
 
-  .media { // idはメディアにより固有
-    width: 80%;
-    margin: 100px auto;
-    padding: 3em;
+  #q1 {
+    background-image: url("../../images/media-introduction-leave-from-stress.jpeg");
+    width: 100vw;
+    height: 70vh;
+    margin: 0 !important;
+    background-size: cover;
 
-    h1 {
-      text-align: center;
-      border-bottom: 5px solid #f9dd91;
+    #q1-text {
+      width: 50%;
+      font-size: 32px;
+      text-align: left;
+      line-height: 3em;
+      color: #f9f6d9;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      padding: 24px;
     }
+  }
 
-    p {
-      font-family: '凸版文久ゴシック', Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 2.0em;
-      margin: 50% auto;
+  #q2 {
+    margin: 100px 0;
+    background-image: url("../../images/media-introduction-fail-stress-management-dark.jpeg");
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    padding: 24px;
+
+    #q2-header {
+      margin-left: auto;
       width: 70%;
+      font-size: 24px;
+      text-align: right;
+      line-height: 5em;
+      color: #f9f6d9;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 
-    p.p1 {
-      margin: 20% auto 50% auto;
+    #q2-text {
+      margin-left: auto;
+      width: 40%;
+      font-size: 18px;
+      text-align: left;
+      line-height: 2em;
+      color: #f9f6d9;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+  }
+
+  #q3 {
+    margin: 100px 0;
+    background-image: url("../../images/media-introduction-brain-inverted.png");
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    padding: 24px;
+
+    #q3-header {
+      width: 40%;
+      min-width: 41%;
+      font-size: 24px;
+      text-align: left;
+      line-height: 5em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      margin-left: -10px;
+    }
+
+    #q3-text {
+      width: 40%;
+      min-width: 40%;
+      font-size: 18px;
+      text-align: left;
+      line-height: 2em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+  }
+
+  #q4 {
+    margin: 100px 0;
+    background-image: url("../../images/media-introduction-sat-method2.jpeg");
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    padding: 24px;
+
+    #q4-header {
+      margin: 0 auto;
+      width: 41%;
+      min-width: 41%;
+      font-size: 24px;
+      text-align: left;
+      line-height: 5em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    #q4-text {
+      margin: 0 auto;
+      width: 40%;
+      min-width: 40%;
+      font-size: 18px;
+      text-align: left;
+      line-height: 2em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    #q4-step {
+      border: none;
+      padding: 9% 10%;
+      min-width: 40%;
+    }
+  }
+
+
+  #q5 {
+    margin: 100px 0;
+    background: #f9efd2;
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    padding: 24px;
+
+    #q5-header {
+      width: 100%;
+      font-size: 24px;
+      text-align: center;
+      line-height: 5em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 
     .btn-container {
@@ -37,15 +147,6 @@
     .btn-next:active {
       cursor: grabbing;
     }
-
   }
 }
-
-#media-introduction {
-
-}
-#media-who-am-i {}
-#media-what-can-i-do {}
-#media-what-can-not-i-do {}
-
 
