@@ -49,8 +49,7 @@
 
     function updateStorage(key, value) {
         // Get existing data
-        let data = getData(globalKey) || '{}'
-        data = JSON.parse(data) // { 'lim-what-kind-of-stress': 'ほげほげ', ... }
+        let data = getData(globalKey)
 
         // Push values to existing data
         data[key] = value
@@ -59,11 +58,12 @@
         local.setItem(globalKey, JSON.stringify(data))
     }
 
+
     function getData(key) {
-        const data = local.getItem(key)
+        let data = local.getItem(key) || '{}'
+        data = JSON.parse(data) // { 'answer-stress1': 2, ... }
         return data
     }
-
 
 
 
