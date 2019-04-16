@@ -33,12 +33,13 @@
             $('#stress-scored-result-strength').text('やや強い');
         } else if (score < 10 && score > 4) {
             $('#stress-scored-result-strength').text('中くらい');
-
         } else if (score < 5 && score > -1) {
             $('#stress-scored-result-strength').text('弱い');
         } else {
             console.error('Error: calScore()')
         }
+
+        renderStressSource()
     }
 
     function calScore(data) {
@@ -93,11 +94,20 @@
             'answer-stress34': '朝夕のラッシュや遠距離通勤(通学を含む)のこと',
         }
 
-        // 2ポイント以上のものを抽出する (filter)
-        // hashがあるとバグるのでhashは入れない
-        const stress = getData(globalKey).filter( (v) => v > 1);
+        const stress = getData(globalKey)
 
+        // flush stress sources
+        $('#stress-scored-result-source').empty()
 
+        // append new stress sources
+        // 2ポイント以上のストレスを表示
+        for (const v in stress) {
+            if (v !== 'id' && // hashが入るとバグるので入れないこと
+                Number.parseInt(stress[v]) > 1) {
+                const $elm = $(`<div class="stress-source column">${stressSource[v]}</div>`)
+                $('#stress-scored-result-source').append($elm)
+            }
+        }
     }
 
 

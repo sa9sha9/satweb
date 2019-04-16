@@ -12,8 +12,6 @@
 
     // ストレスの内容
     $('#lim-what-kind-of-stress').on('change', (e) => {
-        console.log(`key: ${e.currentTarget.id}, value: ${e.target.value} `)
-
         const key = e.currentTarget.id
         const value = e.target.value
 
@@ -25,8 +23,6 @@
 
     // ストレスの色
     $('#lim-what-color').on('change', (e) => {
-        console.log(`key: ${e.currentTarget.id}, value: ${e.target.value} `)
-
         const key = e.currentTarget.id
         const value = e.target.value
 
@@ -36,8 +32,6 @@
     })
     // ストレスの形
     $('#lim-what-shape').on('change', (e) => {
-        console.log(`key: ${e.currentTarget.id}, value: ${e.target.value} `)
-
         const key = e.currentTarget.id
         const value = e.target.value
 
