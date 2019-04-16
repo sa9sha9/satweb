@@ -2,14 +2,14 @@
   margin: 0 0 100px 0 !important;
 
 
-  #q1 {
+  #top-message {
     background-image: url("../../images/media-introduction-leave-from-stress.jpeg");
     width: 100vw;
     height: 70vh;
     margin: 0 !important;
     background-size: cover;
 
-    #q1-text {
+    #top-message-text {
       width: 50%;
       font-size: 32px;
       text-align: left;
@@ -20,7 +20,7 @@
     }
   }
 
-  #q2 {
+  #how-about-stress-management {
     margin: 100px 0;
     background-image: url("../../images/media-introduction-fail-stress-management-dark.jpeg");
     width: 100vw;
@@ -28,7 +28,7 @@
     background-size: cover;
     padding: 24px;
 
-    #q2-header {
+    #how-about-stress-management-header {
       margin-left: auto;
       width: 70%;
       font-size: 24px;
@@ -38,7 +38,7 @@
       font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 
-    #q2-text {
+    #how-about-stress-management-text {
       margin-left: auto;
       width: 40%;
       font-size: 18px;
@@ -49,7 +49,8 @@
     }
   }
 
-  #q3 {
+
+  #what-is-satcare {
     margin: 100px 0;
     background-image: url("../../images/media-introduction-brain-inverted.png");
     width: 100vw;
@@ -57,7 +58,7 @@
     background-size: cover;
     padding: 24px;
 
-    #q3-header {
+    #what-is-satcare-header {
       width: 40%;
       min-width: 41%;
       font-size: 24px;
@@ -65,10 +66,9 @@
       line-height: 5em;
       color: #55454c;
       font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-      margin-left: -10px;
     }
 
-    #q3-text {
+    #what-is-satcare-text {
       width: 40%;
       min-width: 40%;
       font-size: 18px;
@@ -79,7 +79,7 @@
     }
   }
 
-  #q4 {
+  #what-user-do {
     margin: 100px 0;
     background-image: url("../../images/media-introduction-sat-method2.jpeg");
     width: 100vw;
@@ -87,7 +87,7 @@
     background-size: cover;
     padding: 24px;
 
-    #q4-header {
+    #what-user-do-header {
       margin: 0 auto;
       width: 41%;
       min-width: 41%;
@@ -98,7 +98,7 @@
       font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 
-    #q4-text {
+    #what-user-do-text {
       margin: 0 auto;
       width: 40%;
       min-width: 40%;
@@ -109,15 +109,16 @@
       font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 
-    #q4-step {
+    #what-user-do-step {
       border: none;
-      padding: 9% 10%;
+      padding: 5% 10%;
       min-width: 40%;
     }
   }
 
 
-  #q5 {
+
+  #lets-do {
     margin: 100px 0;
     background: #f9efd2;
     width: 100vw;
@@ -125,7 +126,7 @@
     background-size: cover;
     padding: 24px;
 
-    #q5-header {
+    #lets-do-header {
       width: 100%;
       font-size: 24px;
       text-align: center;
@@ -148,5 +149,68 @@
       cursor: grabbing;
     }
   }
+
+
+  #what-is-sat {
+    margin: 100px 0;
+    background-image: url("../../images/media-introduction-munakata.png");
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    padding: 24px;
+
+    #what-is-sat-header {
+      width: 40%;
+      min-width: 41%;
+      font-size: 24px;
+      text-align: left;
+      line-height: 5em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    #what-is-sat-text {
+      width: 40%;
+      min-width: 40%;
+      font-size: 18px;
+      text-align: left;
+      line-height: 2em;
+      color: #55454c;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+  }
+
+  #what-is-light-image-method {
+    margin: 100px 0;
+    background-image: url("../../images/media-introduction-light-image-method.jpeg");
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    padding: 24px;
+
+    #what-is-light-image-method-header {
+      margin-left: auto;
+      width: 41%;
+      min-width: 41%;
+      font-size: 24px;
+      text-align: left;
+      line-height: 5em;
+      color: #f3efe4;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    #what-is-light-image-method-text {
+      margin-left: auto;
+      width: 40%;
+      min-width: 40%;
+      font-size: 18px;
+      text-align: left;
+      line-height: 2em;
+      color: #f3efe4;
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+  }
+
 }
+
 
